@@ -1,0 +1,42 @@
+[
+    {
+        "model": "split.user",
+        "fields": {
+            "email": "u1@u1.com",
+            "phone_number": "",
+            "first_name" : "joy",
+            "last_name" : "joy",
+            "balance": "0.00"
+        }
+    },
+    {
+        "model": "split.user",
+        "fields": {
+            "email": "u2@u2.com",
+            "phone_number": "",
+            "first_name" : "mike",
+            "last_name" : "mike",
+            "balance": "0.00"
+        }
+    },
+    {
+        "model": "split.user",
+        "fields": {
+            "email": "u3@u3.com",
+            "phone_number": "",
+            "first_name" : "jack",
+            "last_name" : "jack",
+            "balance": "0.00"
+        }
+    },
+    {
+        "model": "split.user",
+        "fields": {
+            "email": "u4@u4.com",
+            "phone_number": "",
+            "first_name" : "tom",
+            "last_name" : "tom",
+            "balance": "0.00"
+        }
+    }
+]

@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "c60a3e0b-8aac-493c-ab38-bdbe680f4f2d",
+		"name": "split-wise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21346456"
+	},
+	"item": [
+		{
+			"name": "split amount EQUAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"total_amount\": 1000,\n    \"split_type\": \"EQUAL\",\n    \"split_owner\" : \"u1@u1.com\",\n    \"split_to\": [\n        {\n            \"email\": \"u1@u1.com\"\n        },\n        {\n            \"email\": \"u2@u2.com\"\n        },\n        {\n            \"email\": \"u3@u3.com\"\n        },\n        {\n            \"email\": \"u4@u4.com\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/split_amount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"split_amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "split amount EXACT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"total_amount\": 1250,\n    \"split_type\": \"EXACT\",\n    \"split_owner\": \"u1@u1.com\",\n    \"split_to\": [\n        {\n            \"email\": \"u2@u2.com\",\n            \"amount\": 370\n        },\n        {\n            \"email\": \"u3@u3.com\",\n            \"amount\": 880\n        },\n        {\n            \"email\": \"u4@u4.com\",\n            \"amount\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/split_amount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"split_amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "split amount PERCENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"total_amount\": 1200,\n    \"split_type\": \"PERCENT\",\n    \"split_owner\" : \"u4@u4.com\",\n    \"split_to\": [\n        {\n            \"email\": \"u1@u1.com\",\n            \"percent\" : 40\n        },\n        {\n            \"email\": \"u2@u2.com\",\n            \"percent\" : 20\n        },\n        {\n            \"email\": \"u3@u3.com\",\n            \"percent\" : 20\n        },\n        {\n            \"email\": \"u4@u4.com\",\n            \"percent\" : 20\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/split_amount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"split_amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "member passbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"u2@u2.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_member_passbook",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_member_passbook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

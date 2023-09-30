@@ -6,7 +6,7 @@ from split.models import SplitAmountToUser, User
 class UserAndSplitAmountSerializer(serializers.Serializer):
     email = serializers.EmailField()
     amount = serializers.DecimalField(required=False, max_digits=8, decimal_places=2)
-    percent = serializers.DecimalField(required=False, max_digits=8, decimal_places=2)
+    percent = serializers.DecimalField(required=False, max_digits=3, decimal_places=2)
 
     def validate_email(self, value):
         if not User.objects.filter(email=value).exists():

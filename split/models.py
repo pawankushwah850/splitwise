@@ -52,12 +52,8 @@ class User(BaseUser):
 
 
 class SplitAmountToUser(models.Model):
-    borrow_from = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="borrow_by"
-    )  # who is giving money
-    borrow_by = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="borrow_from"
-    )  # who is taking money
+    borrow_from = models.ForeignKey(User, on_delete=models.CASCADE, related_name="borrow_by")  # who is giving money
+    borrow_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name="borrow_from")  # who is taking money
     amount = models.DecimalField(decimal_places=2, max_digits=8)
 
     created_at = models.DateTimeField(auto_now=True, auto_created=True)

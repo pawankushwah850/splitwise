@@ -8,6 +8,9 @@
 virtualenv venv
 pip install -r requirment.txt
 
+# migrate db
+python3 manage.py migrate
+
 # load fixture to create users
 python manage.py loaddata split/fixtures/User.json --app split.User
 

@@ -21,7 +21,7 @@ python3 manage.py createsuperuser
 python3 manage.py runserver
 ```
 
-###### In project directory you will find postman collection (split-wise.postman_collection.json)  for endpoints
-###### T0 moniter expenses use can also use : http://127.0.0.1:8000/admin/split/splitamounttouser/
+###### In the project directory you will find postman collection (split-wise.postman_collection.json) for endpoints
+###### To monitor expenses you can also use: http://127.0.0.1:8000/admin/split/splitamounttouser/
 
 

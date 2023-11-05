@@ -18,7 +18,7 @@ python manage.py loaddata split/fixtures/User.json --app split.User
 python3 manage.py createsuperuser
 
 # run server
-python3 manage.py runserver
+python3 manage.py runserver 9000
 ```
 
 ###### In the project directory you will find postman collection (split-wise.postman_collection.json) for endpoints
